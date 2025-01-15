@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 import re
 import json
-import inventory_classes as ic
+import yangson_inventory_builder.inventory_classes as ic
 import uuid
 import logging
 logger = logging.getLogger("yang_parser_app")
@@ -175,7 +175,7 @@ class NokiaYangsonInventory(YangsonInventory):
         :param yang_file: module txt file
         :return: Namespace
         """
-        namespace: str = ""
-        if namespace_re := re.search("^\s+namespace\s+\"(\S+)\";", yang_file, re.MULTILINE):
+        namespace: str = ''
+        if namespace_re := re.search(r'^\s+namespace\s+"(\S+)";', yang_file, re.MULTILINE):
             namespace = namespace_re.group(1)
         return namespace
