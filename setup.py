@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='yangson_inventory_builder',
-    version="0.1.1",
+    version="0.1.2",
     description="Building inventory for the Yangson Python tool",
     author="Dmitrii Khorn",
     author_email="dima.khorn@gmail.com",
