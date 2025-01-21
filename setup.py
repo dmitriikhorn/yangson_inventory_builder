@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='yangson_inventory_builder',
-    version="0.1.2",
+    version="0.1.3",
     description="Building inventory for the Yangson Python tool",
     author="Dmitrii Khorn",
     author_email="dima.khorn@gmail.com",
@@ -18,5 +18,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.12',
+    python_requires='>=3.10',
 )
